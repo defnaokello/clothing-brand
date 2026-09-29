@@ -83,7 +83,7 @@ export default function Journal() {
       </header>
 
       <div className="container">
-        <div className="journal__grid" style={{ paddingTop: 'var(--space-lg)' }}>
+        <div className="journal__grid">
           {posts.map((post, i) => (
             <motion.a
               key={post.id}

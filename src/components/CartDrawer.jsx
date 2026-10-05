@@ -2,7 +2,7 @@ import { FiX } from 'react-icons/fi';
 import { useCart } from '../context/CartContext';
 
 export default function CartDrawer() {
-  const { items, isOpen, setIsOpen, removeItem, updateQty, total } = useCart();
+  const { items, isOpen, setIsOpen, removeItem, updateQty } = useCart();
 
   return (
     <>
@@ -13,11 +13,11 @@ export default function CartDrawer() {
 
       <aside className={`cart-drawer ${isOpen ? 'open' : ''}`}>
         <div className="cart-drawer__header">
-          <h3>Your Cart ({items.length})</h3>
+          <h3>Your Wishlist ({items.length})</h3>
           <button
             className="cart-drawer__close"
             onClick={() => setIsOpen(false)}
-            aria-label="Close cart"
+            aria-label="Close wishlist"
           >
             <FiX />
           </button>
@@ -26,7 +26,7 @@ export default function CartDrawer() {
         <div className="cart-drawer__body">
           {items.length === 0 ? (
             <div className="cart-drawer__empty">
-              <p>Your cart is empty.</p>
+              <p>Your wishlist is empty.</p>
             </div>
           ) : (
             items.map((item) => (
@@ -39,9 +39,6 @@ export default function CartDrawer() {
                 <div className="cart-item__info">
                   <span className="cart-item__name">{item.name}</span>
                   <span className="cart-item__meta">Size: {item.size}</span>
-                  <span className="cart-item__price">
-                    ${(item.price * item.qty).toFixed(2)}
-                  </span>
                   <div className="cart-item__qty">
                     <button onClick={() => updateQty(item.id, item.size, item.qty - 1)}>
                       −
@@ -63,15 +60,6 @@ export default function CartDrawer() {
           )}
         </div>
 
-        {items.length > 0 && (
-          <div className="cart-drawer__footer">
-            <div className="cart-drawer__total">
-              <span>Subtotal</span>
-              <strong>${total.toFixed(2)}</strong>
-            </div>
-            <button className="cart-drawer__checkout">Proceed to Checkout</button>
-          </div>
-        )}
       </aside>
     </>
   );

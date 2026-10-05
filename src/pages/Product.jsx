@@ -45,7 +45,6 @@ export default function Product() {
           <div className="product-page__info">
             <span className="eyebrow">{product.category}</span>
             <h1 className="product-page__name">{product.name}</h1>
-            <p className="product-page__price">${product.price}</p>
             <p className="product-page__desc">{product.description}</p>
 
             <div className="product-page__sizes">
@@ -70,7 +69,7 @@ export default function Product() {
               onClick={handleAdd}
               disabled={!selectedSize}
             >
-              {selectedSize ? 'Add to cart' : 'Select a size'}
+              {selectedSize ? 'Add to wishlist' : 'Select a size'}
             </button>
           </div>
         </div>

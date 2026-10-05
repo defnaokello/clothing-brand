@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { FiShoppingBag, FiMenu, FiX, FiSearch } from 'react-icons/fi';
+import { FiHeart, FiMenu, FiX, FiSearch } from 'react-icons/fi';
 import { useCart } from '../context/CartContext';
 import SearchOverlay from './SearchOverlay';
 
@@ -58,9 +58,9 @@ export default function Navbar() {
             <button
               className="navbar__cart"
               onClick={() => setIsOpen(true)}
-              aria-label="Open cart"
+              aria-label="Open wishlist"
             >
-              <FiShoppingBag />
+              <FiHeart />
               {count > 0 && <span className="navbar__badge">{count}</span>}
             </button>
           </nav>

@@ -5,13 +5,13 @@ const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const [items, setItems] = useState(() => {
-    const saved = localStorage.getItem('cart');
+    const saved = localStorage.getItem('wishlist');
     return saved ? JSON.parse(saved) : [];
   });
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(items));
+    localStorage.setItem('wishlist', JSON.stringify(items));
   }, [items]);
 
   const addItem = (product, size) => {
@@ -38,12 +38,11 @@ export function CartProvider({ children }) {
     );
   };
 
-  const total = items.reduce((sum, i) => sum + i.price * i.qty, 0);
   const count = items.reduce((sum, i) => sum + i.qty, 0);
 
   return (
     <CartContext.Provider
-      value={{ items, addItem, removeItem, updateQty, total, count, isOpen, setIsOpen }}
+      value={{ items, addItem, removeItem, updateQty, count, isOpen, setIsOpen }}
     >
       {children}
     </CartContext.Provider>

@@ -37,6 +37,17 @@ export default function SearchOverlay({ isOpen, onClose }) {
       ? []
       : products.filter((p) => {
           const q = query.toLowerCase();
+          const isShirtCategorySearch = q === 'shirt' || q === 'shirts';
+          const isNewArrivalsSearch = ['new', 'new arrival', 'new arrivals'].includes(q);
+
+          if (isShirtCategorySearch) {
+            return p.category === 'Shirts';
+          }
+
+          if (isNewArrivalsSearch) {
+            return p.isNew === true && p.category === 'Shirts';
+          }
+
           return (
             p.name.toLowerCase().includes(q) ||
             p.category.toLowerCase().includes(q) ||
@@ -44,7 +55,7 @@ export default function SearchOverlay({ isOpen, onClose }) {
           );
         });
 
-  const suggestions = ['Knitwear', 'Outerwear', 'Shirts', 'New Arrivals', 'Accessories'];
+  const suggestions = ['Shirts', 'New Arrivals', 'Accessories'];
 
   return (
     <div className={`search-overlay ${isOpen ? 'open' : ''}`}>
@@ -113,9 +124,7 @@ export default function SearchOverlay({ isOpen, onClose }) {
                     </div>
                     <div className="search-result__info">
                       <span className="search-result__name">{product.name}</span>
-                      <span className="search-result__meta">
-                        {product.category} · ${product.price}
-                      </span>
+                      <span className="search-result__meta">{product.category}</span>
                     </div>
                   </Link>
                 ))}

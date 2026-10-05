@@ -8,6 +8,8 @@ export default function Hero() {
         <img
           src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1920&q=80"
           alt="Editorial fashion"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="hero__overlay" />
       </div>

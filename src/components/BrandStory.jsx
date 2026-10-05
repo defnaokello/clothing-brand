@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function BrandStory() {
   return (
@@ -36,7 +37,7 @@ export default function BrandStory() {
             No seasonal churn. No trend-chasing. Just enduring garments,
             thoughtfully made.
           </p>
-          <a href="/about" className="brand-story__link">Read our story →</a>
+          <Link to="/about" className="brand-story__link">Read our story →</Link>
         </motion.div>
       </div>
     </section>

@@ -44,9 +44,9 @@ export default function Shop() {
               key={product.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.05 }}
+              transition={{ duration: 0.5, delay: i < 4 ? i * 0.05 : 0 }}
             >
-              <ProductCard product={product} />
+              <ProductCard product={product} eager={i < 4} />
             </motion.div>
           ))}
         </div>

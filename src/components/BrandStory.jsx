@@ -13,7 +13,7 @@ export default function BrandStory() {
           viewport={{ once: true }}
         >
           <img
-            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900&q=80"
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&w=900&q=75"
             alt="Atelier craftsmanship"
             loading="lazy"
           />

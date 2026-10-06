@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero__bg">
         <img
-          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&w=1920&q=75"
           alt="Editorial fashion"
           fetchPriority="high"
           decoding="async"

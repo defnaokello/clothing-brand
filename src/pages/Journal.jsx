@@ -9,7 +9,7 @@ const posts = [
     category: 'Style',
     date: 'Oct 12, 2025',
     image:
-      'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80',
+      'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&w=800&q=75',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const posts = [
     category: 'Craft',
     date: 'Sep 28, 2025',
     image:
-      'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&q=80',
+      'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&w=800&q=75',
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const posts = [
     category: 'Guides',
     date: 'Sep 15, 2025',
     image:
-      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80',
+      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&w=800&q=75',
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const posts = [
     category: 'Sustainability',
     date: 'Aug 30, 2025',
     image:
-      'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80',
+      'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&w=800&q=75',
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const posts = [
     category: 'People',
     date: 'Aug 12, 2025',
     image:
-      'https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=800&q=80',
+      'https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&w=800&q=75',
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const posts = [
     category: 'Lookbook',
     date: 'Aug 1, 2025',
     image:
-      'https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=800&q=80',
+      'https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&w=800&q=75',
   },
 ];
 

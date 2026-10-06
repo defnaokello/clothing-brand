@@ -3,45 +3,45 @@ import { motion } from 'framer-motion';
 const galleryItems = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=900&q=80',
+    src: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&w=900&q=75',
     caption: 'The Atelier Edit',
     className: 'gallery__item--big',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&w=700&q=75',
     caption: 'City Nights',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1509319117193-57bab727e09d?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1509319117193-57bab727e09d?auto=format&w=700&q=75',
     caption: 'Backstage',
     className: 'gallery__item--tall',
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&w=700&q=75',
     caption: 'Studio Sessions',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&w=700&q=75',
     caption: 'Monochrome',
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=900&q=80',
+    src: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&w=900&q=75',
     caption: 'Golden Hour',
     className: 'gallery__item--wide',
   },
   {
     id: 7,
-    src: 'https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&w=700&q=75',
     caption: 'Fabric Study',
   },
   {
     id: 8,
-    src: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700&q=80',
+    src: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&w=700&q=75',
     caption: 'On Set',
     className: 'gallery__item--tall',
   },

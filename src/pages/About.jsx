@@ -10,7 +10,7 @@ export default function About() {
     >
       <header className="about__hero">
         <div className="container">
-          <span className="eyebrow">About Atelier</span>
+          <span className="eyebrow">About Us</span>
           <h1>We believe in fewer, better things.</h1>
         </div>
       </header>
@@ -20,7 +20,7 @@ export default function About() {
           <div className="about__block">
             <div className="about__blockImg">
               <img
-                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&q=80"
+                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&w=900&q=75"
                 alt="Atelier studio"
               />
             </div>
@@ -42,7 +42,7 @@ export default function About() {
           <div className="about__block">
             <div className="about__blockImg">
               <img
-                src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=900&q=80"
+                src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&w=900&q=75"
                 alt="Fabric detail"
               />
             </div>

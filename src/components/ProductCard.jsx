@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, eager = false }) {
   return (
     <Link to={`/product/${product.id}`} className="product-card">
       <div className="product-card__imageWrap">
@@ -8,7 +8,8 @@ export default function ProductCard({ product }) {
           src={product.image}
           alt={product.name}
           className="product-card__image--primary"
-          loading="lazy"
+          loading={eager ? 'eager' : 'lazy'}
+          fetchPriority={eager ? 'high' : 'auto'}
         />
         {product.hoverImage && (
           <img

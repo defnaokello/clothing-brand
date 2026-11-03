@@ -3,6 +3,8 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
+import QuickView from './components/QuickView';
+import { QuickProvider } from './context/QuickViewContext';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Product from './pages/Product';
@@ -18,7 +20,7 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <>
+    <QuickProvider>
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
@@ -83,6 +85,7 @@ export default function App() {
       </AnimatePresence>
       <Footer />
       <CartDrawer />
-    </>
+      <QuickView />
+    </QuickProvider>
   );
 }
